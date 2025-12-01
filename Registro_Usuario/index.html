@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Pumas DC - Registro de Usuario</title>
+</head>
+
+<body>
+     <section class="seccion-datos-personales">
+
+          <h1 class="titulo-seccion">PUMAS DC.</h1>
+          <p class="descripcion-seccion">Por favor seleccione el tipo de usuario a registrar</p>
+
+          <form class="form-personales">
+
+               <!-- Tipo de usuario -->
+               <article class="grupo-completo">
+                    <label class="label-campo">Tipo de usuario</label>
+                    <select class="campo-seleccion" name="tipo_usuario">
+                         <option value="">Jugador</option>
+                    </select>
+               </article>
+
+               <!-- Contenedor de dos columnas -->
+               <section class="grid-dos-columnas">
+
+                    <!-- Columna izquierda -->
+                    <article class="columna-form">
+
+                         <label class="label-campo">Nombre</label>
+                         <input type="text" class="campo-texto" name="nombre">
+
+                         <label class="label-campo">Tipo de documento</label>
+                         <select class="campo-seleccion" name="tipo_documento">
+                              <option value="">Seleccione</option>
+                              <option value="CC">Cédula de ciudadanía</option>
+                              <option value="TI">Tarjeta de identidad</option>
+                         </select>
+
+                         <label class="label-campo">Número de teléfono</label>
+                         <input type="tel" class="campo-texto" name="telefono">
+
+                         <label class="label-campo">Seleccione un género</label>
+                         <select class="campo-seleccion" name="genero">
+                              <option value="">Seleccione</option>
+                              <option value="masculino">Masculino</option>
+                              <option value="femenino">Femenino</option>
+                         </select>
+
+                         <label class="label-campo">Fecha de nacimiento</label>
+                         <input type="date" class="campo-texto" name="fecha_nacimiento">
+
+                         <label class="label-campo">Número teléfono acudiente</label>
+                         <input type="tel" class="campo-texto" name="telefono_acudiente">
+
+                         <label class="label-campo">Password</label>
+                         <input type="password" class="campo-texto" name="password">
+
+                    </article>
+
+                    <article class="columna-form">
+
+                         <label class="label-campo">Apellidos</label>
+                         <input type="text" class="campo-texto" name="apellidos">
+
+                         <label class="label-campo">Número de documento</label>
+                         <input type="number" class="campo-texto" name="numero_documento">
+
+                         <label class="label-campo">Correo electrónico</label>
+                         <input type="email" class="campo-texto" name="correo">
+
+                         <label class="label-campo">EPS</label>
+                         <input type="text" class="campo-texto" name="eps">
+
+                         <label class="label-campo">Talla camiseta</label>
+                         <input type="text" class="campo-texto" name="talla_camiseta">
+
+                         <label class="label-campo">Nombre acudiente</label>
+                         <input type="text" class="campo-texto" name="nombre_acudiente">
+
+                    </article>
+
+               </section>
+
+          </form>
+
+     </section>
+
+
+     <section class="seccion-datos-deportivos">
+
+          <h1 class="titulo-seccion">PUMAS DC.</h1>
+          <p class="descripcion-seccion">Complete la información deportiva del jugador</p>
+
+          <form class="form-deportivos">
+
+               <article class="grupo-completo">
+                    <label class="label-campo">Tipo de deportista</label>
+                    <select class="campo-seleccion" name="tipo_deportista">
+                         <option value="">Seleccione</option>
+                         <option value="futbol">Fútbol</option>
+                         <option value="baloncesto">Baloncesto</option>
+                         <option value="voleibol">Voleibol</option>
+                         <option value="atletismo">Atletismo</option>
+                    </select>
+               </article>
+
+               <section class="grid-dos-columnas">
+
+                    <article class="columna-form">
+
+                         <label class="label-campo">Posición en el campo</label>
+                         <select class="campo-seleccion" name="posicion">
+                              <option value="">Seleccione</option>
+                              <option value="delantero">Delantero</option>
+                              <option value="mediocampista">Mediocampista</option>
+                              <option value="defensa">Defensa</option>
+                              <option value="portero">Portero</option>
+                         </select>
+
+                         <label class="label-campo">Número de camiseta</label>
+                         <input type="number" class="campo-texto" name="numero_camiseta">
+
+                         <label class="label-campo">Años de experiencia</label>
+                         <input type="number" class="campo-texto" name="experiencia">
+
+                         <label class="label-campo">Pie dominante</label>
+                         <select class="campo-seleccion" name="pie_dominante">
+                              <option value="">Seleccione</option>
+                              <option value="derecho">Derecho</option>
+                              <option value="izquierdo">Izquierdo</option>
+                              <option value="ambos">Ambos</option>
+                         </select>
+
+                         <label class="label-campo">Estatura (cm)</label>
+                         <input type="number" class="campo-texto" name="estatura">
+
+                    </article>
+
+                    <article class="columna-form">
+
+                         <label class="label-campo">Categoría deportiva</label>
+                         <select class="campo-seleccion" name="categoria_deportiva">
+                              <option value="">Seleccione</option>
+                              <option value="sub-10">Sub-10</option>
+                              <option value="sub-12">Sub-12</option>
+                              <option value="sub-15">Sub-15</option>
+                              <option value="sub-17">Sub-17</option>
+                              <option value="mayores">Mayores</option>
+                         </select>
+
+                         <label class="label-campo">Peso (kg)</label>
+                         <input type="number" class="campo-texto" name="peso">
+
+                         <label class="label-campo">Nivel competitivo</label>
+                         <select class="campo-seleccion" name="nivel_competitivo">
+                              <option value="">Seleccione</option>
+                              <option value="aficionado">Aficionado</option>
+                              <option value="semiprofesional">Semiprofesional</option>
+                              <option value="profesional">Profesional</option>
+                         </select>
+
+                         <label class="label-campo">Club actual</label>
+                         <input type="text" class="campo-texto" name="club_actual">
+
+                         <label class="label-campo">Nombre del entrenador</label>
+                         <input type="text" class="campo-texto" name="nombre_entrenador">
+
+                    </article>
+
+               </section>
+
+          </form>
+
+     </section>
+
+
+</body>
+
+</html>

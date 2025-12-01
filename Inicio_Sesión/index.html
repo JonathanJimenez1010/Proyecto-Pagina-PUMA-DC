@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Pumas DC - Inicio de Sesión</title>
+     <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+     <main>
+          <section class="contenedor-formulario">
+               <h1 class="titulo-formulario">PUMAS DC.</h1>
+
+               <form class="formulario-login" aria-label="Formulario de inicio de sesión">
+
+                    <!-- Usuario -->
+                    <div class="form-group">
+                         <input type="text" id="usuario" name="usuario" placeholder="Usuario" required>
+                    </div>
+
+                    <!-- Contraseña -->
+                    <div class="form-group">
+                         <input type="password" id="password" name="password" placeholder="Password" required>
+                    </div>
+
+                    <!-- Rol -->
+                    <div class="form-group">
+                         <select id="rol" name="rol" required>
+                              <option value="">Seleccione un rol</option>
+                              <option value="administrador">Administrador</option>
+                              <option value="usuario">Usuario</option>
+                         </select>
+                    </div>
+
+                    <!-- Botón de ingreso y enlace de registro juntos -->
+                    <div class="form-group boton-registro">
+                         <button type="submit">INGRESAR</button>
+                         <a href="#">Registrarse</a>
+                    </div>
+               </form>
+          </section>
+          <img src="../img/logo_pumas_DC.png" alt="Logo Página Pumas DC">
+     </main>
+</body>
+
+</html>
