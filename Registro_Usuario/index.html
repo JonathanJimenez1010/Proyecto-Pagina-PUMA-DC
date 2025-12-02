@@ -1,34 +1,31 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
-     <meta charset="UTF-8">
-     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <meta charset="UTF-8" />
+     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
      <title>Pumas DC - Registro de Usuario</title>
+     <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
-     <section class="seccion-datos-personales">
+     <div class="form-container">
+          <div class="header">
+               <h1 class="titulo-seccion">PUMAS DC.</h1>
+               <p class="descripcion-seccion">Por favor seleccione el tipo de usuario a registrar</p>
+          </div>
 
-          <h1 class="titulo-seccion">PUMAS DC.</h1>
-          <p class="descripcion-seccion">Por favor seleccione el tipo de usuario a registrar</p>
+          <div class="selector-row">
+               <select class="campo-seleccion-inline" name="tipo_usuario">
+                    <option value="">Jugador</option>
+               </select>
+          </div>
 
-          <form class="form-personales">
+          <div class="divider-selector"></div>
 
-               <!-- Tipo de usuario -->
-               <article class="grupo-completo">
-                    <label class="label-campo">Tipo de usuario</label>
-                    <select class="campo-seleccion" name="tipo_usuario">
-                         <option value="">Jugador</option>
-                    </select>
-               </article>
-
-               <!-- Contenedor de dos columnas -->
-               <section class="grid-dos-columnas">
-
-                    <!-- Columna izquierda -->
+          <div class="form-inner">
+               <div class="grid-dos-columnas">
                     <article class="columna-form">
-
                          <label class="label-campo">Nombre</label>
                          <input type="text" class="campo-texto" name="nombre">
 
@@ -54,14 +51,9 @@
 
                          <label class="label-campo">Número teléfono acudiente</label>
                          <input type="tel" class="campo-texto" name="telefono_acudiente">
-
-                         <label class="label-campo">Password</label>
-                         <input type="password" class="campo-texto" name="password">
-
                     </article>
 
                     <article class="columna-form">
-
                          <label class="label-campo">Apellidos</label>
                          <input type="text" class="campo-texto" name="apellidos">
 
@@ -79,38 +71,24 @@
 
                          <label class="label-campo">Nombre acudiente</label>
                          <input type="text" class="campo-texto" name="nombre_acudiente">
-
                     </article>
+               </div>
 
-               </section>
+               <div class="full-row">
+                    <label class="label-campo">Password</label>
+                    <input type="password" class="campo-texto input-full" name="password">
+               </div>
+          </div>
 
-          </form>
+          <div class="sports-header">
+               <h2 class="titulo-subseccion">Datos deportivos</h2>
+               <div class="divider-content"></div>
+               <p class="descripcion-seccion">Complete la información deportiva del jugador</p>
+          </div>
 
-     </section>
-
-
-     <section class="seccion-datos-deportivos">
-
-          <h1 class="titulo-seccion">PUMAS DC.</h1>
-          <p class="descripcion-seccion">Complete la información deportiva del jugador</p>
-
-          <form class="form-deportivos">
-
-               <article class="grupo-completo">
-                    <label class="label-campo">Tipo de deportista</label>
-                    <select class="campo-seleccion" name="tipo_deportista">
-                         <option value="">Seleccione</option>
-                         <option value="futbol">Fútbol</option>
-                         <option value="baloncesto">Baloncesto</option>
-                         <option value="voleibol">Voleibol</option>
-                         <option value="atletismo">Atletismo</option>
-                    </select>
-               </article>
-
-               <section class="grid-dos-columnas">
-
+          <div class="form-inner">
+               <div class="grid-dos-columnas">
                     <article class="columna-form">
-
                          <label class="label-campo">Posición en el campo</label>
                          <select class="campo-seleccion" name="posicion">
                               <option value="">Seleccione</option>
@@ -136,11 +114,9 @@
 
                          <label class="label-campo">Estatura (cm)</label>
                          <input type="number" class="campo-texto" name="estatura">
-
                     </article>
 
                     <article class="columna-form">
-
                          <label class="label-campo">Categoría deportiva</label>
                          <select class="campo-seleccion" name="categoria_deportiva">
                               <option value="">Seleccione</option>
@@ -167,16 +143,14 @@
 
                          <label class="label-campo">Nombre del entrenador</label>
                          <input type="text" class="campo-texto" name="nombre_entrenador">
-
                     </article>
+               </div>
+          </div>
 
-               </section>
-
-          </form>
-
-     </section>
-
-
+          <div class="boton-reg">
+               <a href="../Inicio_Sesión/index.html" class="registrar-jug">REGISTRAR</a>
+          </div>
+     </div>
 </body>
 
 </html>

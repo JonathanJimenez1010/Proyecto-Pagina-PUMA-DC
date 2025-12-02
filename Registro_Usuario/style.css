@@ -1,0 +1,221 @@
+* {
+     box-sizing: border-box;
+}
+
+body {
+     margin: 0;
+     padding: 80px 20px;
+     font-family: Arial, Helvetica, sans-serif;
+     background: #ffffff;
+     background-image: url('../img/fondo-register-pumasdc.png');
+     background-size: cover;
+     background-position: center;
+     background-repeat: no-repeat;
+     display: flex;
+     justify-content: center;
+}
+
+.form-container {
+     width: 97vw;
+     background: #fff;
+     border: 1px solid #f3b2b2;
+     border-radius: 6px;
+     padding: 50px 9vw;
+}
+
+.header {
+     text-align: center;
+     padding: 40px 0 10px;
+}
+
+.titulo-seccion {
+     font-size: 26px;
+     font-weight: 700;
+}
+
+.descripcion-seccion {
+     font-size: 14px;
+     color: #555;
+     margin-top: 4px;
+}
+
+.selector-row {
+     display: flex;
+     justify-content: center;
+     padding: 15px 0;
+}
+
+.campo-seleccion-inline {
+     width: 40%;
+     border: none;
+     border-bottom: 1px solid #e39a96;
+     padding: 6px 2px;
+     font-size: 14px;
+     background: transparent;
+     outline: none;
+}
+
+.divider-selector {
+     height: 1px;
+     background: #afafaf71;
+     width: 120%;
+     margin: 25px 25px;
+     transform: translateX(-10%);
+}
+
+.form-inner {
+     padding: 30px 0;
+}
+
+.grid-dos-columnas {
+     display: grid;
+     grid-template-columns: 1fr 1fr;
+     gap: 40px;
+}
+
+.columna-form {
+     display: flex;
+     flex-direction: column;
+     gap: 20px;
+}
+
+.full-row {
+     margin-top: 14px;
+     width: 100%;
+}
+
+.input-full {
+     width: 100%;
+     border: none;
+     border-bottom: 2px solid #e7352f;
+     padding: 6px 2px;
+     font-size: 14px;
+     background: transparent;
+     outline: none;
+}
+
+.divider-content {
+     width: 100%;
+     height: 1px;
+     background: #afafaf71;
+     margin: 40px 0;
+}
+
+.label-campo {
+     font-size: 13px;
+}
+
+.campo-texto,
+.campo-seleccion {
+     width: 100%;
+     border: none;
+     border-bottom: 1px solid #e39a96;
+     padding: 6px 2px;
+     font-size: 14px;
+     background: transparent;
+     outline: none;
+}
+
+.titulo-subseccion {
+     text-align: center;
+     margin-top: 10px;
+     font-size: 18px;
+     font-weight: 700;
+}
+
+select {
+     appearance: none;
+}
+
+.boton-reg {
+     text-align: center;
+     margin-top: 50px;
+}
+
+.registrar-jug {
+     display: inline-block;
+     padding: 12px 40px;
+     background: #ff2f2c;
+     margin-bottom: 30px;
+     color: white;
+     font-size: 18px;
+     border-radius: 10px;
+     cursor: pointer;
+     text-decoration: none;
+     text-align: center;
+     transition: 0.3s ease;
+     text-decoration: none;
+}
+
+@media (max-width: 2300px) {
+     body {
+          flex-direction: column;
+          align-items: center;
+     }
+}
+
+@media (max-width: 1900px) {
+     .form-container {
+          max-width: 1200px;
+     }
+}
+
+@media (max-width: 1510px) {
+     .form-container {
+          max-width: 1000px;
+     }
+}
+
+@media (max-width: 1200px) {
+     .form-inner {
+          padding: 25px 0;
+     }
+
+     .grid-dos-columnas {
+          gap: 30px;
+     }
+}
+
+@media (max-width: 992px) {
+     .grid-dos-columnas {
+          grid-template-columns: 1fr;
+     }
+}
+
+@media (max-width: 768px) {
+     .form-container {
+          width: 92vw;
+          padding: 0 5vw;
+     }
+
+     .divider-selector {
+          width: 100%;
+          transform: translateX(0);
+     }
+}
+
+@media (max-width: 600px) {
+     .divider-selector {
+          width: 100%;
+     }
+}
+
+@media (max-width: 480px) {
+     .form-container {
+          width: 95vw;
+     }
+
+     .divider-selector {
+          width: 100%;
+     }
+}
+
+@media (max-width: 360px) {
+     .form-container {
+          width: 97vw;
+     }
+
+     .divider-selector {
+          width: 100%;
+     }
+}
