@@ -85,12 +85,22 @@ main {
      cursor: pointer;
 }
 
-.boton-registro a {
-     color: black;
-     text-decoration: underline;
-     font-weight: bold;
+.btn-ingresar {
+     display: inline-block;
+     padding: 10px 60px;
+     font-size: 1rem;
+     margin-bottom: 20px;
+     border: none;
+     border-radius: 10px;
+     background-color: #ff2f2c;
+     color: white;
+     cursor: pointer;
+     text-decoration: none;
      text-align: center;
-     margin-bottom: 5px;
+}
+
+.link-registrarse {
+     color: black;
 }
 
 img {
@@ -109,8 +119,8 @@ img {
           align-items: center;
           height: auto;
      }
-     
-     main{
+
+     main {
           margin-bottom: 180px;
      }
 
